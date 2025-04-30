@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div style="background-color:rgba(81, 190, 212, 0.521); height: 150px; width: 700px;  border-radius:15px;" >
+            <img src="https://up.yimg.com/ib/th?id=OIP.eue2pWyPih6OVFJRAcghiQHaHa&pid=Api&rs=1&c=1&qlt=95&w=50&h=50" alt="">
+            <h3 style="color:blue">TELANGANA STATE ROAD TRANSPORT CORPORATION</h3>
+            <h3>GENERAL BUS PASS APPLICATION</h3>
+        </div><br>
+        <form action="./main.html" autocomplete="off">
+            <fieldset style=" width: 700px; border-radius: 15px; font-size: 18px; background-color: rgba(140, 138, 141, 0.208);">
+                <legend style="background-color: rgb(53, 162, 221); border-radius: 5px;">Applicant Details</legend>
+                <label for="ne">Name:<span style="color:red">*</span></label>
+                <input type="text" id="ne" placeholder="Enter Your Name" max-length="20" required autofocus>
+                <label for="fn">Father's/Guardian's Name:<span style="color:red">*</span></label>
+                
+                <input type="text" id="fn" placeholder=""required > <br><br>
+                <label for="dob">Date Of Birth:<span style="color:red">*</span></label>
+                <input type="date"id="dob" required>
+                <label for="">Gender</label>
+                <input type="radio" value="male" id="gr" name="gr" required>
+                <label for="gr">Male</label>
+                <input type="radio" id="gr1" value="famale" name="gr" required>
+                <label for="gr1">Female</label><br><br>
+                <label for="">Age As on:<span style="color:red">*</span></label>
+                <input type="text"id="ys" maxlength="2"style="width: 25px;" required>
+                <label for="ys">Year(s)</label>
+                <input type="text"id="ms" maxlength="2"style="width: 25px;" required>
+                <label for="ms">Month(s)</label>
+                <input type="text"id="ds" maxlength="2"style="width: 25px;" required>
+                <label for="ds">Day(s)</label>
+                <label for="An">Adhar No:<span style="color:red">*</span></label>
+                <input type="text" id="An" placeholder="Enter your AdharNo" maxlength="12" minlength="12" required>
+                <br><br>
+                <label for="Wp">WhatsApp No<span style="color:red">*</span></label>
+                <input type="text" style="width: 25px;" placeholder=""value="91+" disabled>
+                <input type="text" id="Wp"  placeholder="" maxlength="10"minlength="10" required>
+                <label for="El">Email Id</label>
+                <input type="email"id="El" placeholder="Enter Your Email" required><br><br>
+                <label for="po">Photo</label>
+                <input type="file" id="po" accept=".png,.jpeg" required>
+             
+                
+            </fieldset><br>
+            <fieldset style=" width: 700px; border-radius: 15px; font-size: 18px;  background-color: rgba(140, 138, 141, 0.168);">
+                <legend style="background-color: rgb(53, 162, 221); border-radius: 5px;">Resedential Address</legend>
+                <label for="aa">Applicant's Address<span style="color:red">*</span></label>
+                <textarea name="" id="aa" rows="3" cols="15" maxlength="20"></textarea>
+                <label for="st" >District <span style="color:red">*</span></label>
+                <select id="st" required>
+                    <option value="" selected disabled>--select--</option>
+                    <option value="">Khammam</option>
+                    <option value="">Hyderbad</option>
+                    <option value="">Warangal</option>
+                    <option value="">KarimNagar</option>
+                    <option value="">Medak</option>
+                    <option value="">Nizamabad</option>
+                </select><br><br>
+                <label for="md">Mandal<span style="color:red">*</span></label>
+                <select id="md" required>
+                    <option value="" selected disabled>--select--</option>
+                    <option value="">Kamepally</option>
+                    <option value="">Enkoor</option>
+                    <option value="">Thogita</option>
+                    <option value="">Jammikunta</option>
+                    <option value="">Navipet</option>
+                    <option value="">Kodad</option>
+                </select>
+            </select>
+            <label for="v">Village<span style="color:red">*</span></label>
+            <select id="v" required>
+                <option value="" selected disabled>--select--</option>
+                <option value="">Narayanapuram</option>
+                <option value="">Enkoor</option>
+                <option value="">Mucherla</option>
+                <option value="">Karepally</option>
+                <option value="">Ellandu</option>
+                <option value="">Kodad</option>
+            </select><br><br>
+            <label for="">Pincode <span style="color:red">*</span></label>
+            <input type="text" placeholder="Enter Pincode" required>
+
+
+            </fieldset><br>
+            <fieldset style=" width: 700px; border-radius: 15px; font-size: 18px; background-color: rgba(140, 138, 141, 0.168);">
+                <legend style="background-color: rgb(53, 162, 221); border-radius: 5px;">Pass Type Details</legend>
+                <label for="ct">City<span style="color:red">*</span></label>
+                <select id="ct" required>
+                    <option value="" selected disabled>--select--</option>
+                    <option value="">Khammam</option>
+                    <option value="">Hyderbad</option>
+                    <option value="">Warangal</option>
+                    <option value="">KarimNagar</option>
+                    <option value="">Medak</option>
+                    <option value="">Nizamabad</option>
+                </select><br><br>
+                <label for="pt">Pass Type<span style="color:red">*</span></label>
+                <select id="pt" style="width: 100PX;" required>
+                    <option value="" selected disabled>--select--</option>
+                    <option value="">GREATER PASS</option>
+                    <option value="">GENERAL ORDINARY ROUTE PASS MLTY</option>
+                    <option value="">GENERAL METRO EXPRESS ROUTE PASS MLTY</option>
+                    <option value="">ORDINARY PASS</option>
+                    <option value="">METRO EXPRESS PASS</option>
+                    <option value="">METRO DELUXE PASS</option>
+                </select><br><br>
+                <label for="pt">From Pass District <span style="color:red">*</span></label>
+                <select id="pt" style="width: 100PX;" required>
+                    <option value="" selected disabled>--select--</option>
+                    <option value="">Khammam</option>
+                    <option value="">Hyderbad</option>
+                    <option value="">Warangal</option>
+                    <option value="">KarimNagar</option>
+                    <option value="">Medak</option>
+                    <option value="">Nizamabad</option>
+                </select>
+                <label for="pt">To Pass District <span style="color:red">*</span></label>
+                <select id="pt" style="width: 100PX;" required>
+                    <option value="" selected disabled>--select--</option>
+                    <option value="">Khammam</option>
+                    <option value="">Hyderbad</option>
+                    <option value="">Warangal</option>
+                    <option value="">KarimNagar</option>
+                    <option value="">Medak</option>
+                    <option value="">Nizamabad</option>
+                </select><br><br>
+                <label for="pc">From plce <span style="color:red">*</span></label>
+                <input type="text" id="pc"placeholder="Enter place">
+                <label for="pc">To plce <span style="color:red">*</span></label>
+                <input type="text" id="pc"placeholder="Enter place"><br><br>
+                <label for="rt">Route<span style="color:red">*(From-via-to)</span></label>
+                <select id="pt" style="width: 100PX;" required>
+                    <option value="" selected disabled>--select--</option>
+                    <option value="">Khammam-Ellendu</option>
+                    <option value="">secundrabad-kukatapalli</option>
+                    <option value="">cbse-KPHB</option>
+                    <option value="">hyd-maisammaguda</option>
+                    <option value="">Medak-thogita</option>
+                    <option value="">Nizamabad-Navipet</option>
+                </select><br><br>
+              
+                
+            </fieldset><br>
+            <fieldset style=" width: 700px; border-radius: 15px; font-size: 18px; background-color: rgba(140, 138, 141, 0.168);">
+                <legend style="background-color: rgb(53, 162, 221); border-radius: 5px;">Mode Of Payment & Pass Collection</legend>
+                <label for="pm">Payment Mode <span style="color:red">*</span></label>
+                <select name="" id="pm">
+                    <option value="select" selected disabled>--select Payment Mode--</option>
+                    <option value="">Payment at counter</option>
+                    <option value="">Online Mode</option>
+
+                </select><br><br>
+                <label for="pdm">Pass Delivery Mode <span style="color:red">*</span></label>
+                <select name="" id="pdm">
+                    <option value="select" selected disabled>--select Pass Delivery Mode--</option>
+                    <option value="">at counter</option>
+                    <option value="">via post</option>
+
+                </select><br><br>
+                <label for="cc">center at witch
+                You want to collect
+                <span style="color:red">*</span></label>
+                <select name="" id="cc">
+                    <option value="select" selected disabled>--select--</option>
+                    <option value="">RTC AIBDS-HYD[10/06/2025]</option>
+                    <option value="">RTC AFZALGUNZ-HYD[10/06/2025]</option>
+                    <option value="">RTC AIRPORT-HYD[10/06/2025]</option>
+                    <option value="">RTC BALANAGAR-HYD[10/06/2025]</option>
+                    <option value="">RTC CBS-HYD[10/06/2025]</option>
+
+                </select>
+            </fieldset><br>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.czlrhOA1lBeAMBl2TDb5sQHaDJ&pid=Api" alt="" height="35px" width="140px">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.XRjXWXvJIMNMNWeWCzUu2QHaHa&pid=Api&P=0&h=180" alt="" height="50px" width="50px"><br>
+            <input type="text" placeholder=""><br><br>
+            <input type="submit" name="" id="" value="SUBMIT">
+
+        </form><br>
+        
+       
+    </center>
+    
+</body>
+</html>
